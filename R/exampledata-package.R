@@ -6,7 +6,7 @@
 #' @aliases exampledata package-exampledata
 NULL
 
-#' A Fake Weagmans Grocery
+#' A Fake Wegmans Grocery
 #'
 #' A dataset containing fake grocery related data.
 #'
@@ -26,8 +26,8 @@ NULL
 #'
 #' @docType data
 #' @keywords datasets
-#' @name weagmans
-#' @usage data(weagmans)
+#' @name wegmans
+#' @usage data(wegmans)
 #' @format A data frame with 30 rows and 10 variables
 NULL
 
@@ -103,3 +103,6 @@ NULL
 #' @format A data frame with 60 rows and 3 variables
 #' @references \url{http://carnegieclassifications.iu.edu}
 NULL
+
+
+
