@@ -1,24 +1,16 @@
-exampledata
-============
-
+-   [Installation](#installation)
+-   [Contact](#contact)
 
 [![Build
 Status](https://travis-ci.org/trinker/exampledata.svg?branch=master)](https://travis-ci.org/trinker/exampledata)
 [![Coverage
 Status](https://coveralls.io/repos/trinker/exampledata/badge.svg?branch=master)](https://coveralls.io/r/trinker/exampledata?branch=master)
 
-**exampledata** is...
-
-
-Table of Contents
-============
-
--   [[Installation](#installation)](#[installation](#installation))
--   [[Contact](#contact)](#[contact](#contact))
+**exampledata** is a data package with example data that is optimized
+for teaching particular constructs.
 
 Installation
 ============
-
 
 To download the development version of **exampledata**:
 
