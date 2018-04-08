@@ -263,3 +263,36 @@ NULL
 #'           theme(legend.position = 'none')
 #' }
 NULL 
+
+
+#' Historic Snowfall by Month for Buffalo
+#' 
+#' A dataset containing historical monthly snowfall records.  Columns are in 
+#' character because of T cell values.  The user will want to determine what T
+#' means, replace it with an appropriate value, and convert the columns to
+#' numeric.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item SEASON. Year span for winter season
+#'   \item JUL. Snow fall in this month
+#'   \item AUG. Snow fall in this month
+#'   \item SEP. Snow fall in this month
+#'   \item OCT. Snow fall in this month
+#'   \item NOV. Snow fall in this month
+#'   \item DEC. Snow fall in this month
+#'   \item JAN. Snow fall in this month
+#'   \item FEB. Snow fall in this month
+#'   \item MAR. Snow fall in this month
+#'   \item APR. Snow fall in this month
+#'   \item MAY. Snow fall in this month
+#'   \item JUN. Snow fall in this month
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name buffalo_snow 
+#' @usage data(buffalo_snow) 
+#' @format A data frame with 78 rows and 13 variables 
+#' @references https://www.weather.gov/buf/BuffaloSnow
+NULL 
