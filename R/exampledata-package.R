@@ -295,4 +295,48 @@ NULL
 #' @usage data(buffalo_snow) 
 #' @format A data frame with 78 rows and 13 variables 
 #' @references https://www.weather.gov/buf/BuffaloSnow
+#' @examples 
+#' \dontrun{
+#' library(tidyverse)
+#' library(exampledata)
+#' library(viridis)
+#' 
+#' bufsnow <- buffalo_snow %>%
+#'     gather(Month, Snow, - SEASON)  %>%
+#'     extract(SEASON, c('Start'), '(\\d{4})-\\d{2}', remove = FALSE) %>%
+#'     filter(!is.na(Snow)) %>%
+#'     mutate(
+#'         Month = gsub('(^.)(.+$)', '\\U\\1\\L\\2', Month, perl = TRUE)  %>%
+#'             factor(levels = month.abb),
+#'         Snow = replace_na(as.numeric(Snow), .01),
+#'         Start = as.integer(Start),
+#'         Year = case_when(as.integer(Month) %in% 1:6 ~ as.integer(Start + 1), TRUE ~ Start)
+#'     ) %>%  
+#'     rename(Season = SEASON) %>%
+#'     arrange(Season, Year, Month) %>% 
+#'     select(Season, Year, Month, Snow)
+#' 
+#' 
+#' bufsnow %>%
+#'     ggplot(aes(x = Month, y = Snow, color = as.factor(Year), group = Year)) +
+#'         geom_line() +
+#'         coord_polar()
+#' 
+#' 
+#' bufsnow %>%
+#'     mutate(Month = factor(Month, levels = c(month.abb[c(7:12, 1:6)]))) %>%
+#'     ggplot(aes(x = Month, y = Season, fill= Snow)) +
+#'     geom_tile() +
+#'     scale_fill_viridis()
+#' 
+#' 
+#' bufsnow %>%
+#'     group_by(Season) %>%
+#'     summarize(total = sum(Snow)) %>%
+#'     ggplot(aes(y=total, x=Season, group = 1)) +
+#'         geom_line(size = 1) +
+#'         geom_point() +
+#'         theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust =1))
+#' 
+#' }
 NULL 
