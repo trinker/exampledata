@@ -465,6 +465,7 @@ NULL
 #'   \item Season. The snow season (spans across 2 years)
 #'   \item Year. The year within the season
 #'   \item Month. The month within the year
+#'   \item Decade. The decade attached to the year
 #'   \item Snow. The amount of snow in inches that fell
 #' } 
 #' 
