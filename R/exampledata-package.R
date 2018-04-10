@@ -340,3 +340,114 @@ NULL
 #' 
 #' }
 NULL 
+
+
+#' Ceareal Nutrition
+#' 
+#' A dataset containing nutritional information on popular cereals.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item name. Name of the cereal
+#'   \item mfr. Manufacturer of cereal \code{list(A = 'American Home Food Products', 
+#'   G = 'General Mills', K = 'Kelloggs', N = 'Nabisco', P = 'Post', Q = 'Quaker Oats',
+#'   R = 'Ralston Purina')}
+#'   \item type. Cereal type; hot (h) or cold (c)
+#'   \item calories. Calories per serving
+#'   \item protein. Grams of protei
+#'   \item fat. Grams of fat
+#'   \item sodium. Milligrams of sodium 
+#'   \item fiber. Grams of dietary fiber
+#'   \item carbo. Grams of complex carbohydrates
+#'   \item sugars. Grams of sugars
+#'   \item potass. Milligrams of potassium
+#'   \item vitamins. Vitamins and minerals: One of 0, 25, or 100, indicating the typical percentage of FDA recommended
+#'   \item shelf. Display shelf (1, 2, or 3, counting from the floor)
+#'   \item weight. Weight in ounces of one serving
+#'   \item cups. Number of cups in one serving
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name cereal 
+#' @author Petra Isenberg, Pierre Dragicevic and Yvonne Jansen
+#' @usage data(cereal) 
+#' @format A data frame with 77 rows and 15 variables 
+#' @references https://www.kaggle.com/crawford/80-cereals
+NULL 
+
+
+#' Joy of Painting Objects
+#' 
+#' A dataset containing an indicator of which episodes contained various tagged 
+#' objects.  Originally used by fivethirtyeight.com and analyzed 
+#' https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item Season. The season number
+#'   \item Episode. The episode number
+#'   \item Aired. Sate episode aired
+#'   \item Title. The title of the episode
+#'   \item aurora_borealis. An indicator tag of this event
+#'   \item barn. An indicator tag of this event
+#'   \item beach. An indicator tag of this event
+#'   \item boat. An indicator tag of this event
+#'   \item bridge. An indicator tag of this event
+#'   \item building. An indicator tag of this event
+#'   \item bushes. An indicator tag of this event
+#'   \item cabin. An indicator tag of this event
+#'   \item cactus. An indicator tag of this event
+#'   \item cirrus. An indicator tag of this event
+#'   \item cliff. An indicator tag of this event
+#'   \item clouds. An indicator tag of this event
+#'   \item conifer. An indicator tag of this event
+#'   \item cumulus. An indicator tag of this event
+#'   \item deciduous. An indicator tag of this event
+#'   \item diane_andre. An indicator tag of this event
+#'   \item dock. An indicator tag of this event
+#'   \item farm. An indicator tag of this event
+#'   \item fence. An indicator tag of this event
+#'   \item fire. An indicator tag of this event
+#'   \item flowers. An indicator tag of this event
+#'   \item fog. An indicator tag of this event
+#'   \item framed. An indicator tag of this event
+#'   \item grass. An indicator tag of this event
+#'   \item guest. An indicator tag of this event
+#'   \item hills. An indicator tag of this event
+#'   \item lake. An indicator tag of this event
+#'   \item lakes. An indicator tag of this event
+#'   \item lighthouse. An indicator tag of this event
+#'   \item mill. An indicator tag of this event
+#'   \item moon. An indicator tag of this event
+#'   \item mountain. An indicator tag of this event
+#'   \item mountains. An indicator tag of this event
+#'   \item night. An indicator tag of this event
+#'   \item ocean. An indicator tag of this event
+#'   \item palm_trees. An indicator tag of this event
+#'   \item path. An indicator tag of this event
+#'   \item person. An indicator tag of this event
+#'   \item portrait. An indicator tag of this event
+#'   \item river. An indicator tag of this event
+#'   \item rocks. An indicator tag of this event
+#'   \item snow. An indicator tag of this event
+#'   \item snowy_mountain. An indicator tag of this event
+#'   \item steve_ross. An indicator tag of this event
+#'   \item structure. An indicator tag of this event
+#'   \item sun. An indicator tag of this event
+#'   \item tree. An indicator tag of this event
+#'   \item trees. An indicator tag of this event
+#'   \item waterfall. An indicator tag of this event
+#'   \item waves. An indicator tag of this event
+#'   \item windmill. An indicator tag of this event
+#'   \item winter. An indicator tag of this event
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name bob_ross 
+#' @author Walt Hickey
+#' @usage data(bob_ross) 
+#' @format A data frame with 403 rows and 56 variables 
+#' @references https://github.com/fivethirtyeight/data/tree/master/bob-ross
+NULL 

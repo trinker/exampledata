@@ -6,7 +6,7 @@ Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = 
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
 Description: Small data sets that are optimized for teaching particular constructs.
 Depends: R (>= 3.4.0)
-Date: 2018-04-08
+Date: 2018-04-09
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
