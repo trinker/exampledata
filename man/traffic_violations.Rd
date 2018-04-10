@@ -39,8 +39,8 @@ First read about this data set from: https://www.nytimes.com/2018/01/30/upshot/d
   \item `Contributed To Accident`. If the traffic violation was a contributing factor in an accident.
   \item `Race`. Race of the driver. (Example: Asian, Black, White, Other, etc.)
   \item `Gender`. Gender of the driver (F = Female, M = Male)
-  \item `Driver City`. City of the driver’s home address.
-  \item `Driver State`. State of the driver’s home address.
+  \item `Driver City`. City of the driver's home address.
+  \item `Driver State`. State of the driver's home address.
   \item `Arrest Type`. Type of Arrest (A = Marked, B = Unmarked, etc.)
 }
 }
@@ -60,7 +60,10 @@ traffic_violations_clean <- traffic_violations \%>\%
     mutate(
         `Date Of Stop` = as.Date(`Date Of Stop`, format = '\%m/\%d/\%Y'),
         year_of_stop = format(`Time Of Stop`, format="\%Y"),
-        hour_of_day = as.numeric(format(strptime(`Time Of Stop`, format="\%H:\%M:\%S"), format = '\%H')),
+        hour_of_day = `Time Of Stop` \%>\%
+            strptime(format="\%H:\%M:\%S") \%>\%
+            format(format = '\%H') \%>\%
+            as.numeric(),
         day_of_week = factor(weekdays(`Date Of Stop`), levels = numform::constant_weekdays)
     ) \%>\%
     mutate_at(

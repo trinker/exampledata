@@ -3,7 +3,7 @@
 \docType{data}
 \name{cereal}
 \alias{cereal}
-\title{Ceareal Nutrition}
+\title{Cereal Nutrition}
 \format{A data frame with 77 rows and 15 variables}
 \usage{
 data(cereal)

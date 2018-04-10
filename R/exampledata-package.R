@@ -16,8 +16,8 @@ NULL
 #'   \item item. The grocery item
 #'   \item last_shipment. The last time the item was shipped to the stor
 #'   \item weight. The weight of the item
-#'   \item wholesale. The price Weagmans pays for the item
-#'   \item old_price. The price Weagmans was charging before the price change
+#'   \item wholesale. The price Wegmans pays for the item
+#'   \item old_price. The price Wegmans was charging before the price change
 #'   \item new_price. The current price
 #'   \item popularity. A customer rating of stars (1-5 stars; with 5 being the most popular)
 #'   \item organic. A messy character field describing if the item comes in organic ('yes', 'y'), non-organic ('no', 'n'), or both organic and non-organic
@@ -141,8 +141,8 @@ NULL
 #'   \item `Contributed To Accident`. If the traffic violation was a contributing factor in an accident.
 #'   \item `Race`. Race of the driver. (Example: Asian, Black, White, Other, etc.)
 #'   \item `Gender`. Gender of the driver (F = Female, M = Male)
-#'   \item `Driver City`. City of the driver’s home address.
-#'   \item `Driver State`. State of the driver’s home address.
+#'   \item `Driver City`. City of the driver's home address.
+#'   \item `Driver State`. State of the driver's home address.
 #'   \item `Arrest Type`. Type of Arrest (A = Marked, B = Unmarked, etc.)
 #' } 
 #' 
@@ -168,7 +168,10 @@ NULL
 #'     mutate(
 #'         `Date Of Stop` = as.Date(`Date Of Stop`, format = '%m/%d/%Y'),
 #'         year_of_stop = format(`Time Of Stop`, format="%Y"),
-#'         hour_of_day = as.numeric(format(strptime(`Time Of Stop`, format="%H:%M:%S"), format = '%H')),
+#'         hour_of_day = `Time Of Stop` %>%
+#'             strptime(format="%H:%M:%S") %>%
+#'             format(format = '%H') %>%
+#'             as.numeric(),
 #'         day_of_week = factor(weekdays(`Date Of Stop`), levels = numform::constant_weekdays)
 #'     ) %>%
 #'     mutate_at(
@@ -342,7 +345,7 @@ NULL
 NULL 
 
 
-#' Ceareal Nutrition
+#' Cereal Nutrition
 #' 
 #' A dataset containing nutritional information on popular cereals.
 #' 
@@ -450,4 +453,25 @@ NULL
 #' @usage data(bob_ross) 
 #' @format A data frame with 403 rows and 56 variables 
 #' @references https://github.com/fivethirtyeight/data/tree/master/bob-ross
+NULL 
+
+
+#' Tidy Version of Historic Snowfall by Month for Buffalo 
+#' 
+#' A dataset containing historical monthly snowfall records.  
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item Season. The snow season (spans across 2 years)
+#'   \item Year. The year within the season
+#'   \item Month. The month within the year
+#'   \item Snow. The amount of snow in inches that fell
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name buffalo_snow_tidy 
+#' @usage data(buffalo_snow_tidy) 
+#' @format A data frame with 932 rows and 4 variables 
+#' @references https://www.weather.gov/buf/BuffaloSnow
 NULL 

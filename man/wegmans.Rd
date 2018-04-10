@@ -17,8 +17,8 @@ A dataset containing fake grocery related data.
   \item item. The grocery item
   \item last_shipment. The last time the item was shipped to the stor
   \item weight. The weight of the item
-  \item wholesale. The price Weagmans pays for the item
-  \item old_price. The price Weagmans was charging before the price change
+  \item wholesale. The price Wegmans pays for the item
+  \item old_price. The price Wegmans was charging before the price change
   \item new_price. The current price
   \item popularity. A customer rating of stars (1-5 stars; with 5 being the most popular)
   \item organic. A messy character field describing if the item comes in organic ('yes', 'y'), non-organic ('no', 'n'), or both organic and non-organic
