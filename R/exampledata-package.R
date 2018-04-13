@@ -508,3 +508,34 @@ NULL
 #' @format A data frame with 81,542 rows and 15 variables 
 #' @references https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
 NULL 
+
+
+#' Cross Tab of Top Breeds and Names from nyc_dogs Data Set
+#' 
+#' A dataset containing a cross tab of breeds and dog names.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item breed. The breed of the dog
+#'   \item Bella. A name
+#'   \item Buddy. A name 
+#'   \item Charlie. A name 
+#'   \item Coco. A name 
+#'   \item Daisy. A name 
+#'   \item Lola. A name 
+#'   \item Lucky. A name 
+#'   \item Lucy. A name 
+#'   \item Max. A name 
+#'   \item Molly. A name 
+#'   \item Princess. A name 
+#'   \item Rocky. A name 
+#'   \item n. Total count of that breed for the \code{nyc_dogs} data set. 
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name breed_name 
+#' @usage data(breed_name) 
+#' @format A data frame with 10 rows and 14 variables 
+#' @references https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
+NULL 
