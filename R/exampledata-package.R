@@ -476,3 +476,35 @@ NULL
 #' @format A data frame with 932 rows and 4 variables 
 #' @references https://www.weather.gov/buf/BuffaloSnow
 NULL 
+
+
+#' Dogs of NYC Project 
+#' 
+#' A dataset containing New York City dog data.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item dog_name. Name of dog
+#'   \item gender. Gender of dog
+#'   \item breed. Breed of dog
+#'   \item birth. Birth date of dog
+#'   \item birth_year. Birth year of dog
+#'   \item birth_month. Birth month of dog
+#'   \item dominant_color. Primary fur color
+#'   \item secondary_color. Secondary fur color
+#'   \item third_color. Third fur color
+#'   \item spayed_or_neutered. Logical indicating if dog has been fixed
+#'   \item guard_or_trained. Logical indicating if the dog is trained for gaurd duty or or special area
+#'   \item borough. Borough of NYC dog is located in
+#'   \item zip_code. Zip code of NYC dog is located in
+#'   \item latitude. Latitude of NYC dog is located in
+#'   \item longitude. Longitude of NYC dog is located in
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name nyc_dogs 
+#' @usage data(nyc_dogs) 
+#' @format A data frame with 81,542 rows and 15 variables 
+#' @references https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
+NULL 
