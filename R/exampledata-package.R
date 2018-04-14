@@ -539,3 +539,57 @@ NULL
 #' @format A data frame with 10 rows and 14 variables 
 #' @references https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
 NULL 
+
+
+#' National School Lunch Program (NSLP) 
+#' 
+#' A dataset containing information about free, reduced and full priced lunches.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item year. Year 
+#'   \item free. Number of students getting free lunch
+#'   \item reduced. Number of students getting reduced price lunch 
+#'   \item full. Number of students paying full price for lunch 
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name lunches 
+#' @usage data(lunches) 
+#' @format A data frame with 47 rows and 4 variables 
+#' @references 
+#' @examples \dontrun{
+#' library(tidyverse)
+#' library(ggrepel)
+#' 
+#' lunches %>%
+#'     gather(type, students, -year) %>%
+#'     group_by(year) %>%
+#'     mutate(prop = students/sum(students)) %>%
+#'     ggplot(aes(year, prop, color = type, group = type)) +
+#'         geom_text(
+#'             data = lunches %>%
+#'                 gather(type, students, -year) %>%
+#'                 group_by(year) %>%
+#'                 mutate(prop = students/sum(students)) %>%                
+#'                 filter(year == 2017),
+#'             aes(label = type),
+#'             hjust = 0, size = 5
+#'         ) +
+#'         geom_line(size = 1) +
+#'         theme_minimal() +
+#'         theme(legend.position = 'none') +
+#'         scale_x_continuous(limits = c(1970, 2023), breaks = seq(1970, 2010, by = 10)) +
+#'         scale_y_continuous(labels = scales::percent)
+#' }
+NULL 
+
+
+
+
+
+
+
+
+
