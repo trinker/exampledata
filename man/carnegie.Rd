@@ -17,7 +17,7 @@ A dataset containing Carnegie classification for institutions.
   \item NAME. The name of the institution
   \item CITY. The city of the institution
   \item STABBR. State abbreviation for the institution
-  \item OBEREG. Region code
+  \item REGIONID. Region code
   \item CONTROL. Control type (e.g., public, private)
   \item ICLEVEL. Level of institution (number of years)
   \item BASIC2015. Basic classification levels
