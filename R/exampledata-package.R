@@ -740,3 +740,23 @@ NULL
 #' @format A data frame with 11 rows and 9 variables 
 NULL 
 
+
+
+#' A Fake Salesperson Data Set
+#' 
+#' A dataset containing fake sales people that can be matched to the 
+#' \code{carnegie} data set for practice joining 
+#' (\code{by = c("REGIONID" = "REGIONID")}).
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item PERSON. A salesperson
+#'   \item REGIONID. Region code
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name fake_sales_person 
+#' @usage data(fake_sales_person) 
+#' @format A data frame with 10 rows and 2 variables 
+NULL 
