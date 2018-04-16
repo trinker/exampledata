@@ -589,7 +589,69 @@ NULL
 
 
 
+#' Join Practice: Sex Based Health Info
+#' 
+#' A dataset containing the sex based health information for practice with
+#' joins.  Tables that work together for join practice include: \code{jp_health},
+#' \code{jp_publishers}, & \code{superheroes}.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item sex. male/female
+#'   \item life_expectancy. Average life expectancy in 2016 in the U.S.
+#'   \item daily_calories. Recommended daily caloric intake
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name jp_health 
+#' @usage data(jp_health) 
+#' @format A data frame with 2 rows and 3 variables 
+NULL 
 
 
+#' Join Practice: Publisher Info
+#' 
+#' A dataset containing superhero comic book publisher founding years for 
+#' practice with joins.  Tables that work together for join practice include: 
+#' \code{jp_health}, \code{jp_publishers}, & \code{superheroes}.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item publisher. The name of the comic book publisher
+#'   \item yr_founded. Year the publishing company was founded
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name jp_publishers 
+#' @usage data(jp_publishers) 
+#' @format A data frame with 3 rows and 2 variables 
+#' @author Jenny Bryan
+#' @references http://stat545.com/bit001_dplyr-cheatsheet.html
+NULL 
 
+
+#' Join Practice: 
+#' 
+#' A dataset containing the superhero character information for practice with
+#' joins.  Tables that work together for join practice include: \code{jp_health},
+#' \code{jp_publishers}, & \code{superheroes}.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item name. The name of the character
+#'   \item alignment. Does the character  align with good or bad more often?
+#'   \item sex. The sex of the character
+#'   \item publisher. The publisher who owns the rights to the character
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name jp_superheroes 
+#' @usage data(jp_superheroes) 
+#' @format A data frame with 7 rows and 4 variables 
+#' @author Jenny Bryan
+#' @references http://stat545.com/bit001_dplyr-cheatsheet.html
+NULL 
 
