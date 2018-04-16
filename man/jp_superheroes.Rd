@@ -3,7 +3,7 @@
 \docType{data}
 \name{jp_superheroes}
 \alias{jp_superheroes}
-\title{Join Practice:}
+\title{Join Practice: Superhero Characters}
 \format{A data frame with 7 rows and 4 variables}
 \usage{
 data(jp_superheroes)

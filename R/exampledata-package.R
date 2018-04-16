@@ -632,7 +632,7 @@ NULL
 NULL 
 
 
-#' Join Practice: 
+#' Join Practice: Superhero Characters
 #' 
 #' A dataset containing the superhero character information for practice with
 #' joins.  Tables that work together for join practice include: \code{jp_health},
@@ -655,3 +655,85 @@ NULL
 #' @references http://stat545.com/bit001_dplyr-cheatsheet.html
 NULL 
 
+
+
+#' Row Bind Practice: 8 Cylinders
+#' 
+#' A dataset containing a cars data set that can be used for practicing row
+#' binding.  A resplit of the \code{mtcars} data set by cylinders with select 
+#' columns removed.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item car. The name of the car
+#'   \item mpg. Miles per gallon
+#'   \item disp. Displacement (cu.in.)
+#'   \item hp. Horsepower
+#'   \item drat. Rear axle ratio
+#'   \item wt. Weight (1000 lbs)
+#'   \item am. Transmission (0 = automatic, 1 = manual)
+#'   \item gear. Number of forward gears
+#'   \item carb. Number of carburetors
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name bp_cyl_8 
+#' @usage data(bp_cyl_8) 
+#' @format A data frame with 14 rows and 9 variables 
+NULL 
+
+
+#' Row Bind Practice: 6 Cylinders
+#' 
+#' A dataset containing a cars data set that can be used for practicing row
+#' binding.  A resplit of the \code{mtcars} data set by cylinders with select 
+#' columns removed.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item car. The name of the car
+#'   \item disp. Displacement (cu.in.)
+#'   \item hp. Horsepower
+#'   \item drat. Rear axle ratio
+#'   \item wt. Weight (1000 lbs)
+#'   \item vs. V/S
+#'   \item am. Transmission (0 = automatic, 1 = manual)
+#'   \item gear. Number of forward gears
+#'   \item carb. Number of carburetors
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name bp_cyl_6 
+#' @usage data(bp_cyl_6) 
+#' @format A data frame with 7 rows and 9 variables 
+NULL 
+
+
+#' Row Bind Practice: 4 Cylinders
+#' 
+#' A dataset containing a cars data set that can be used for practicing row
+#' binding.  A resplit of the \code{mtcars} data set by cylinders with select 
+#' columns removed.
+#' 
+#' @details 
+#' \itemize{
+#'   \item car. The name of the car
+#'   \item mpg. Miles per gallon
+#'   \item disp. Displacement (cu.in.)
+#'   \item hp. Horsepower
+#'   \item drat. Rear axle ratio
+#'   \item wt. Weight (1000 lbs)
+#'   \item qsec 1/4 mile time
+#'   \item vs. V/S
+#'   \item am. Transmission (0 = automatic, 1 = manual)
+#'   \item carb. Number of carburetors
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name bp_cyl_4 
+#' @usage data(bp_cyl_4) 
+#' @format A data frame with 11 rows and 9 variables 
+NULL 
