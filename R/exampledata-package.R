@@ -31,6 +31,7 @@ NULL
 #' @format A data frame with 30 rows and 10 variables
 NULL
 
+
 #' Select Variables from Carnegie Data Set
 #'
 #' A dataset containing Carnegie classification for institutions.
@@ -41,6 +42,7 @@ NULL
 #'   \item NAME. The name of the institution
 #'   \item CITY. The city of the institution
 #'   \item STABBR. State abbreviation for the institution
+#'   \item OBEREG. Region code
 #'   \item CONTROL. Control type (e.g., public, private)
 #'   \item ICLEVEL. Level of institution (number of years)
 #'   \item BASIC2015. Basic classification levels
@@ -80,7 +82,7 @@ NULL
 #' @keywords datasets
 #' @name carnegie
 #' @usage data(carnegie)
-#' @format A data frame with 4,665 rows and 36 variables
+#' @format A data frame with 4,665 rows and 37 variables
 #' @references \url{http://carnegieclassifications.iu.edu}
 NULL
 
@@ -558,7 +560,7 @@ NULL
 #' @name lunches 
 #' @usage data(lunches) 
 #' @format A data frame with 47 rows and 4 variables 
-#' @references 
+#' @references https://catalog.data.gov/dataset/national-school-lunch-assistance-program-participation-and-meals-served-data
 #' @examples \dontrun{
 #' library(tidyverse)
 #' library(ggrepel)
@@ -737,3 +739,4 @@ NULL
 #' @usage data(bp_cyl_4) 
 #' @format A data frame with 11 rows and 9 variables 
 NULL 
+

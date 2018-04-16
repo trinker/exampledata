@@ -4,7 +4,7 @@
 \name{carnegie}
 \alias{carnegie}
 \title{Select Variables from Carnegie Data Set}
-\format{A data frame with 4,665 rows and 36 variables}
+\format{A data frame with 4,665 rows and 37 variables}
 \usage{
 data(carnegie)
 }
@@ -17,6 +17,7 @@ A dataset containing Carnegie classification for institutions.
   \item NAME. The name of the institution
   \item CITY. The city of the institution
   \item STABBR. State abbreviation for the institution
+  \item OBEREG. Region code
   \item CONTROL. Control type (e.g., public, private)
   \item ICLEVEL. Level of institution (number of years)
   \item BASIC2015. Basic classification levels

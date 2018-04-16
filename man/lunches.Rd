@@ -45,4 +45,7 @@ lunches \%>\%
         scale_y_continuous(labels = scales::percent)
 }
 }
+\references{
+https://catalog.data.gov/dataset/national-school-lunch-assistance-program-participation-and-meals-served-data
+}
 \keyword{datasets}
