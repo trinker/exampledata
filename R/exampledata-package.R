@@ -760,3 +760,55 @@ NULL
 #' @usage data(fake_sales_person) 
 #' @format A data frame with 10 rows and 2 variables 
 NULL 
+
+
+
+#' The Full, Raw Carnegie Data Set
+#' 
+#' A dataset containing all columns from the 2015 Carnegie data set.  This data 
+#' is raw, meaning it will likely need to be cleaned before it is usable.
+#' 
+#' @details 
+#' See http://carnegieclassifications.iu.edu/downloads/CCIHE2015-PublicDataFile.xlsx
+#' for the original data set from Carnegie.  In order to understand the variables
+#' you will need the 'Variables' sheet/tab in the .xlsx file.  In order to recode
+#' the categorical variables you will need \code{dplyr::case_when} and the 'Labels'
+#' sheet/tabl in the .xlsx file.
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name full_carnegie_dat 
+#' @usage data(full_carnegie_dat) 
+#' @format A data frame with 4,665 rows and 94 variables 
+#' @references http://carnegieclassifications.iu.edu/
+NULL 
+
+
+#' The Full, Raw College Score Card Data Set
+#' 
+#' @details 
+#' A dataset containing all columns from the 2015 College Score Card data set.  
+#' This data is raw, meaning it will likely need to be cleaned before it is usable.
+#' Cleaning may mean recoding variables and/or coercing data from one class type 
+#' to another (see the examples section for an example coercing from character to
+#' numeric).  See https://collegescorecard.ed.gov/data/documentation/ for 
+#' documentation of the variable meanings.
+#' 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name full_college_scorecard_dat 
+#' @usage data(full_college_scorecard_dat) 
+#' @format A data frame with 7,593 rows and 1,825 variables 
+#' @references https://collegescorecard.ed.gov/data/documentation/
+#' @examples
+#' \dontrun{
+#' library(dplyr)
+#' 
+#' full_college_scorecard_dat %>%
+#'     select(TUITIONFEE_IN, PFTFTUG1_EF) %>%
+#'     mutate_all(as.numeric) %>%
+#'     ggplot(aes(TUITIONFEE_IN, PFTFTUG1_EF)) +
+#'         geom_jitter()
+#' }
+NULL 
