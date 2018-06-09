@@ -812,3 +812,57 @@ NULL
 #'         geom_jitter()
 #' }
 NULL 
+
+
+#'  Montgomery County Weather Data
+#' 
+#' A dataset containing weather data for 2015-2017 for  Montgomery County.  Data
+#' scraped from \url{https://www.wunderground.com/history/airport/KGAI}.  This
+#' data can be joined with the \code{traffic_violations} data.  Note that 61 daya
+#' were missing from the scraped data for the 3 year period.
+#' 
+#' @details 
+#' \itemize{ 
+#'   \item date. The date.
+#'   \item temperature. The average temperature in fahrenheit (F).
+#'   \item precipitation. The inches of precipitation
+#' } 
+#' 
+#' @docType data 
+#' @keywords datasets 
+#' @name weather_data 
+#' @usage data(weather_data) 
+#' @format A data frame with 1,035 rows and 3 variables 
+#' @references \url{https://www.wunderground.com/history/airport/KGAI}
+#' @examples 
+#' \dontrun{
+#' library(exampledata)
+#' library(tidyverse)
+#' library(lubridate)
+#' 
+#' 
+#' traffic_violations %>%
+#'     count(`Date Of Stop`) %>%
+#'     mutate(`Date Of Stop` = lubridate::mdy(`Date Of Stop`)) %>%
+#'     left_join(weather_data, by = c(`Date Of Stop` = 'date')) %>%
+#'     arrange(`Date Of Stop`) %>%
+#'     dplyr::filter(temperature > 35) %>%
+#'     ggplot(aes(precipitation, n)) +
+#'         geom_jitter(alpha = .25) +
+#'         coord_cartesian(xlim = c(0, 2.5), ylim = c(0, 1300)) +
+#'         geom_smooth(fill = NA, method = 'loess')
+#' 
+#' 
+#' 
+#' traffic_violations %>%
+#'     count(`Date Of Stop`) %>%
+#'     mutate(`Date Of Stop` = lubridate::mdy(`Date Of Stop`)) %>%
+#'     left_join(weather_data, by = c(`Date Of Stop` = 'date')) %>%
+#'     arrange(`Date Of Stop`) %>%
+#'     mutate(precipitation2 = cut(precipitation, 3, breaks = c(-Inf, 0, .15, Inf), labels = c('no', 'low', 'high'))) %>%  
+#'     ggplot(aes(temperature, n, color = precipitation2)) +
+#'         geom_jitter() +
+#'         geom_smooth(fill = NA) +
+#'         facet_wrap(~precipitation2)
+#'}
+NULL 
